@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body { 
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+
+  /* header */
+  
+  #cabecalho {
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    height: 120px;
+    border-bottom: 1.5px solid transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px ;
+  }
+
+  header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width:100%;
+  } 
+
+  h1 {
+    width: 87px;
+    height: 68px;
+    mix-blend-mode:screen;
+    font-weight: 700 bold;
+    font-size: 76px;
+    line-height: 76px; 
+    color: #ffffff transparent;
+    /* filter: invert(1) contrast(9); */
+    background: inherit;
+  }
+
+  .sl {
+    font-family: 'UnifrakturCook', cursive;
+    /* Other font properties */
+  }
+  
+  h1:hover {
+    text-decoration: line-through;
+    animation: letter-animation 5s lienar;
+  }
+  
+  /* menu */
+
+  #btn-menu {
+    color: #ffffff transparent;
+    /*filter: invert(1) contrast(9);*/
+  }
+
+  #btn-menu,
+  h1 {
+    mix-blend-mode: difference;
+    z-index: 99999;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  #btn-menu {
+    border:1px solid #ffffff ;
+    border-radius: 13px ;
+    font-weight: 400;
+    padding: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 12px;
+  }
+
+  #btn-menu::after {
+    content: "MENU";
+  }
+
+  .btn-menu-fechar::after {
+    content: "FECHAR" !important;
+  }
+
+  #menu a {
+    color: #ffffff;
+    font-size:50px;
+    text-decoration: none;
+   text-align: center;
+  }
+
+  .menu-aberto{ 
+    transition: all .5s ease-in;
+    top: 0px !important;
+   
+  }
+  
+  #menu{
+    z-index: 10;
+     display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: -100vh;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: rgba(150, 150, 150, 0.98);
+  }
+
+  /* main */
+header,
+  main {
+    mix-blend-mode: difference;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  
+  section {
+    min-height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  section::first-letter {
+    font-family: 'UnifrakturCook', cursive;
+    /* Other font properties */
+  }
+  
+  .linha {
+  border: 0px 20px;
+  margin: 0px auto;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  color: #ffffff;
+  padding: 20px auto;
+ }
+
+  /* Section: Título */
+
+ 
+  
+
+  #tit {
+    font-weight:normal;
+    font-size: 15vw;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #tit::first-letter {
+    font-family: 'UnifrakturCook', cursive;
+    /* Other font properties */
+  }
+
+  #p-tit {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    border: 10px auto;
+    padding-top: 13px;
+  }
+  
+  #banner {
+  padding: 13px;
+  background-image: url('../images/scott-brayley-IfFhWg6dvDY-unsplash.jpg');
+  width: 314px;
+  height: 472px;
+  }
+
+  /* Section: Sobre */
+  
+  #sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  }
+  
+  #sob-tit{
+  font-size: 50px;
+  font-weight: bold;
+  }
+
+  #img-sob {
+    height: 236px;
+    width: 314px;
+  }
+  
+  #img-desc-sob{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  #sob-texto{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  }
+
+  #sob-texto-2 {
+    font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  }
+
+  #sob-texto-3 {
+    font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  }
+  
+  /* Section: Trabalhos */
+
+  #trabalhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+
+  #trab-tit{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  #trab-sub{
+    font-size: 18px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .sobre-ilus{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  #ilustra{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #geo{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #ilus{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding: 20px auto;
+  }
+  
+/* CONTATO */
+
+#cont-tit{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#cont-sub{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#cont-text-2{
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#pre-email {
+  font-family: 'Roboto Flex', sans-serif;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#pre-ig {
+  font-family: 'Roboto Flex', sans-serif;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+  .underline {
+    animation: letter-animation 5s linear;
+  }
+  
+  
+
+  #cont-img{
+    border-radius: 150px;
+  }
+  /* desktop */
+
+.galeria{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:20px;
+}
+
+a {
+  font-family: 'Roboto Flex', sans-serif;
+  color: #ffffff;
+}
+
+  @media (min-width: 700px) {
+    #tit {
+
+      font-style: condensed;
+      font-weight: 500;
+      font-size: 15vw;
+    }
+    
+.galeria{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap:20px;
+}
+
+.galeria img {
+  width: 15%;
+}
+
+ 
+  }
+  
+  @media (min-width:1200px) {
+   
+    #cabecalho {
+        padding: 0px 0px ;
+      }
+      #tit {
+        font-style: condensed;
+        font-weight: 500;
+        font-size: 230px;
+      }
+   
+ }
