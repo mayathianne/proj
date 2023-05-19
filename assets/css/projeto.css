@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px ;
+   
   }
 
   header {
@@ -27,12 +28,12 @@
     top: 0px;
     left: 0px;
     width:100%;
+   
   } 
 
   h1 {
     width: 87px;
     height: 68px;
-    mix-blend-mode:screen;
     font-weight: 700 bold;
     font-size: 76px;
     line-height: 76px; 
@@ -60,7 +61,7 @@
 
   #btn-menu,
   h1 {
-    mix-blend-mode: difference;
+   
     z-index: 99999;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -99,10 +100,11 @@
   
   #menu{
     z-index: 10;
-     display: flex !important;
+    display: flex !important;
     flex-direction: column;
     position: absolute;
     top: -100vh;
+    left: 0px;
     width: 100%;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -112,7 +114,6 @@
   /* main */
 header,
   main {
-    mix-blend-mode: difference;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
     max-width: 1200px;
