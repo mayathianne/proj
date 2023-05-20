@@ -216,8 +216,14 @@ header,
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 15px;
-  }
+  justify-content:space-between;
+  text-align: left;
+ }
   
+ #ponto{
+text-align: left;
+ }
+
   #sob-texto{
     font-family: 'Roboto Flex', sans-serif;
     font-size: 18px;
