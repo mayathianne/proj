@@ -30,8 +30,47 @@
 
   gtag('config', 'G-7M1KTWNKVF');
 </script>
+<script>
+  // Função para fechar a notificação de cookie e definir um cookie de aceitação ou negação
+  function closeCookieNotification(accepted) {
+    document.getElementById("cookie-notification").style.display = "none";
+    var cookieValue = accepted ? "true" : "false";
+    // Define um cookie chamado "cookie_accepted" com o valor de aceitação ou negação e validade de 30 dias
+    var date = new Date();
+    date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = "cookie_accepted=" + cookieValue + ";" + expires + ";path=/";
+  }
+
+  // Verifica se o cookie de aceitação ou negação já existe
+  function checkCookieAccepted() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.indexOf("cookie_accepted=") === 0) {
+        return cookie.substring("cookie_accepted=".length, cookie.length) === "true";
+      }
+    }
+    return false;
+  }
+
+  // Verifica se o cookie de aceitação ou negação existe, caso contrário, exibe a notificação
+  if (!checkCookieAccepted()) {
+    document.getElementById("cookie-notification").style.display = "block";
+  }
+
+  // Adiciona o evento de clique ao botão de aceitar cookie
+  document.getElementById("accept-cookie").addEventListener("click", function() {
+    closeCookieNotification(true);
+  });
+</script>
   </head>
   <body>
+    <div id="cookie-notification">
+      <p>Este site utiliza cookies para melhorar a sua experiência de navegação.</p>
+      <br/>
+      <button id="accept-cookie">Ok</button>
+    </div>
     <header>
         <div id="cabecalho">
           <a href="index.html"><h1>S<span class="sl">J</span></h1></a>
