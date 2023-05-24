@@ -30,40 +30,7 @@
 
   gtag('config', 'G-7M1KTWNKVF');
 </script>
-<script>
-  // Função para fechar a notificação de cookie e definir um cookie de aceitação ou negação
-  function closeCookieNotification(accepted) {
-    document.getElementById("cookie-notification").style.display = "none";
-    var cookieValue = accepted ? "true" : "false";
-    // Define um cookie chamado "cookie_accepted" com o valor de aceitação ou negação e validade de 30 dias
-    var date = new Date();
-    date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
-    var expires = "expires=" + date.toUTCString();
-    document.cookie = "cookie_accepted=" + cookieValue + ";" + expires + ";path=/";
-  }
 
-  // Verifica se o cookie de aceitação ou negação já existe
-  function checkCookieAccepted() {
-    var cookies = document.cookie.split(";");
-    for (var i = 0; i < cookies.length; i++) {
-      var cookie = cookies[i].trim();
-      if (cookie.indexOf("cookie_accepted=") === 0) {
-        return cookie.substring("cookie_accepted=".length, cookie.length) === "true";
-      }
-    }
-    return false;
-  }
-
-  // Verifica se o cookie de aceitação ou negação existe, caso contrário, exibe a notificação
-  if (!checkCookieAccepted()) {
-    document.getElementById("cookie-notification").style.display = "block";
-  }
-
-  // Adiciona o evento de clique ao botão de aceitar cookie
-  document.getElementById("accept-cookie").addEventListener("click", function() {
-    closeCookieNotification(true);
-  });
-</script>
   </head>
   <body>
     <div id="cookie-notification">
@@ -71,6 +38,42 @@
       <br/>
       <button id="accept-cookie">Ok</button>
     </div>
+    
+    <script>
+      // Função para fechar a notificação de cookie e definir um cookie de aceitação ou negação
+      function closeCookieNotification(accepted) {
+        document.getElementById("cookie-notification").style.display = "none";
+        var cookieValue = accepted ? "true" : "false";
+        // Define um cookie chamado "cookie_accepted" com o valor de aceitação ou negação e validade de 30 dias
+        var date = new Date();
+        date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+        var expires = "expires=" + date.toUTCString();
+        document.cookie = "cookie_accepted=" + cookieValue + ";" + expires + ";path=/";
+      }
+    
+      // Verifica se o cookie de aceitação ou negação já existe
+      function checkCookieAccepted() {
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].trim();
+          if (cookie.indexOf("cookie_accepted=") === 0) {
+            return cookie.substring("cookie_accepted=".length, cookie.length) === "true";
+          }
+        }
+        return false;
+      }
+    
+      // Verifica se o cookie de aceitação ou negação existe, caso contrário, exibe a notificação
+      if (!checkCookieAccepted()) {
+        document.getElementById("cookie-notification").style.display = "block";
+      }
+    
+      // Adiciona o evento de clique ao botão de aceitar cookie
+      document.getElementById("accept-cookie").addEventListener("click", function() {
+        closeCookieNotification(true);
+      });
+    </script>
+
     <header>
         <div id="cabecalho">
           <a href="index.html"><h1>S<span class="sl">J</span></h1></a>
@@ -93,11 +96,11 @@
             DESDE 2022
             <br/>
             MARÍLIA /  SÃO PAULO</p>
-          <img id="banner" src="assets/images/scott-brayley-IfFhWg6dvDY-unsplash.jpg" alt="">
+          <img id="banner" src="assets/images/scott-brayley-IfFhWg6dvDY-unsplash.jpg" alt="tattoo">
         </section>
         <section id="sobre">
           <p id="sob-tit">SOBRE SCARLETT</p>
-          <img id="img-sob" src="assets/images/17_05_2023 20_08_24.png" alt="">
+          <img id="img-sob" src="assets/images/17_05_2023 20_08_24.png" alt="tattoo">
           <br/>
           <p id="img-desc-sob"><svg height="10px" width="10px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 451.827 451.827" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#9e9e9e;" d="M225.922,0C101.351,0,0.004,101.347,0.004,225.917s101.347,225.909,225.917,225.909 c124.554,0,225.901-101.347,225.901-225.909C451.823,101.347,350.476,0,225.922,0z"></path> </g> </g> </g></svg> SCARLETT JOELLE</p>
           </br>
@@ -119,10 +122,10 @@
           <p id="ilus">BLACKWORK (12)</p>
           </br>
           <div class="galeria">
-            <img src="assets/images/aleks-marinkovic-SU0K64C51M0-unsplash.jpg" alt="">
-            <img src="assets/images/paul-johnston-iAKXY_fPt8E-unsplash.jpg" alt="">
-            <img src="assets/images/victoria-priessnitz-77YBkkZl800-unsplash.jpg" alt="">
-            <img src="assets/images/david-suarez--xTucAgmR4w-unsplash.jpg" alt="">
+            <img src="assets/images/aleks-marinkovic-SU0K64C51M0-unsplash.jpg" alt="tattoo">
+            <img src="assets/images/paul-johnston-iAKXY_fPt8E-unsplash.jpg" alt="tattoo">
+            <img src="assets/images/victoria-priessnitz-77YBkkZl800-unsplash.jpg" alt="tattoo">
+            <img src="assets/images/david-suarez--xTucAgmR4w-unsplash.jpg" alt="tattoo">
           </div>
           </br>
           <hr class="linha"/>
@@ -162,7 +165,7 @@
           <br/>
           <br/>
           <br/>
-          <img id="cont-img"  src="assets/images/sinitta-leunen-S9xEfo2V1ic-unsplash (1).jpg" alt="">
+          <img id="cont-img"  src="assets/images/sinitta-leunen-S9xEfo2V1ic-unsplash (1).jpg" alt="tattoo">
           
         </section>
     </main>

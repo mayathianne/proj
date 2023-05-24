@@ -152,7 +152,8 @@
     color: #ffffff;
     padding: 5px;
     border-radius: 13px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+    text-align: right; 
   }
   
   #accept-cookie:hover {
@@ -256,19 +257,21 @@
     font-family: 'Roboto Flex', sans-serif;
     font-size: 18px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   }
 
   #sob-texto-2 {
     font-size: 15px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+  text-align: left;
   }
 
   #sob-texto-3 {
     font-size: 15px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+  text-align: left;
   }
   
   /* Section: Trabalhos */
@@ -416,6 +419,11 @@ a {
         font-style: condensed;
         font-weight: 500;
         font-size: 230px;
+      }
+
+      #img-sob {
+        width: 800px;
+        height: 800px;
       }
    
  }
