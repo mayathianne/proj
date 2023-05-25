@@ -244,8 +244,9 @@
   }
 
   #img-sob {
+    padding: 0px 20px;
+    width: 236px;
     height: auto;
-    width: 100%;
   }
   
   #img-desc-sob{
@@ -432,8 +433,8 @@ a {
       }
 
       #img-sob {
-        width: 800px;
-        height: 800px;
+        padding: 0px 20px;
+        width: 900px;
       }
 
       #trab-tit {
@@ -446,7 +447,9 @@ a {
       }
 
       #banner {
-        margin-bottom: 300px;
+        margin-bottom: 150px;
+        width: 500px;
+        height: auto;
       }
 
       #sobre {
@@ -454,7 +457,7 @@ a {
       }
 
       #trabalhos {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
       }
 
       #contato {
