@@ -223,7 +223,7 @@
   background-image: url('../images/scott-brayley-IfFhWg6dvDY-unsplash.jpg');
   width: 314px;
   height: 472px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   }
 
   /* Section: Sobre */
@@ -235,7 +235,7 @@
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   }
   
   #sob-tit{
@@ -244,7 +244,7 @@
   }
 
   #img-sob {
-    height: 236px;
+    height: auto;
     width: 100%;
   }
   
@@ -292,7 +292,7 @@
     flex-direction: column;
     text-align: center;
     height: 100vh;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
 
   #trab-tit{
@@ -308,6 +308,7 @@
     font-weight: 400;
     text-align: center;
     margin: 0px;
+    margin-top: 10px;
   }
 
   #ilustra{
