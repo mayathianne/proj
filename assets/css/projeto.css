@@ -265,7 +265,7 @@
   #sob-texto-2 {
     font-size: 15px;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   }
 
@@ -295,7 +295,7 @@
   }
   
   #trab-sub{
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 400;
     text-align: center;
